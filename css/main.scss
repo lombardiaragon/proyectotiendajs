@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: large;
+}
+
+@import "partials/variables";
+@import "partials/switchmode";
+@import "partials/login";
+@import "partials/header";
+@import "partials/cuerpo";
+@import "partials/tienda";
+@import "partials/footer";
+@import "partials/mediaqueries";
+
+#cuerpo {
+    background-color: $fondoClaro;
+    color: $oscuro;
+    &.dark{
+        background-color: $oscuro;
+        color:$claro;
+    }
+}

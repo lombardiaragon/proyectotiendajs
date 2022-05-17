@@ -1,0 +1,54 @@
+/*header*/
+//NAV
+
+
+
+header{
+    nav{ background-image:linear-gradient(173deg, rgb(83, 186, 67), white);
+        body.dark & {
+            background-image: linear-gradient(160deg, rgb(173, 201, 169), rgb(15, 45, 12));
+
+        }
+        div{
+            a{
+               .logo1{
+                    animation-name: animameLogo;
+                    animation-iteration-count: 1;
+                    animation-duration: 5s;
+                    animation-delay: 0s;
+                    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);   
+                    }
+            }
+            div{
+                ul{
+                    li{
+                        &:hover {
+                         text-decoration: underline;
+                            }   
+                    }
+                }
+            }
+        }
+    }
+    section{
+        padding: 5px;
+        background-image:linear-gradient(173deg, rgb(83, 186, 67), white);
+        body.dark & {
+            background-image: linear-gradient(160deg, rgb(173, 201, 169), rgb(15, 45, 12));
+        }
+    }
+}
+
+//animación logo
+ 
+@keyframes animameLogo {
+    from {
+      transform: translateY(-150px);
+      opacity: 0;
+      
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+ } 

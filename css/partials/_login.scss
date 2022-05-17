@@ -1,0 +1,21 @@
+.btnLogin{
+   height: 40px;
+   width: 40px;
+   border-radius: 100px;
+   border-style: hidden;
+   background-color: $oscuro;
+   body.dark & {
+    background-color: $claro;
+    }
+   span{
+       color: $claro;
+       body.dark & {
+           color: $oscuro;
+       }
+   }
+}
+.login{
+    background-color: rgb(55, 55, 106);
+    color: #fff;
+}
+

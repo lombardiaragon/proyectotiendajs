@@ -1,0 +1,66 @@
+ 
+/*FOOTER*/
+
+footer{
+    background-image:linear-gradient(to top, rgb(83, 186, 67), white);
+    body.dark & {
+        background-image: linear-gradient(rgb(108, 123, 105), rgb(15, 45, 12));
+    }
+    div{
+        ul{
+            li{
+                a{
+                    .logofb{
+                        width: 40px;
+                        height: 40px;
+                        color: $fondoClaro;
+                        padding: 5px;
+                        body.dark & {
+                            color:$claro;
+                        }
+                        &:hover{
+                            width: 45px;
+                            height: 45px;
+                            color:rgb(7, 73, 7);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div{
+        ul{
+            li{
+                a{
+                    .logoinst{
+                        @extend .logofb;
+                    }
+                 }
+             }
+        }
+    }
+    div{
+        ul{
+            li{
+                a{
+                    .logowsp{
+                        @extend .logofb;
+                     }
+                }
+            }
+        }
+    }
+}
+
+.copy{
+    color: $fondoClaro;
+    body.dark & {
+        color: $claro;
+    }
+}
+  
+
+
+
+

@@ -1,0 +1,173 @@
+/*CUERPO TIENDA*/ 
+
+//Nav
+.inputSearcher{
+    width: 20rem;
+}
+
+//Botones Categorias
+.estiloBtnCategorias{
+    border-radius: 5px;
+    padding:15px;
+    text-align: center;
+    background-color: $btnsModoClaro;
+    color:$claro;
+    font-weight: bold;
+    cursor:pointer;
+    width: 30rem;
+    height: 60px;
+    body.dark &{
+        color: $oscuro;
+        background-color: $btnsModoOscuro;
+    }
+    &:hover{
+        background-color: $claro;
+        color:$oscuro;
+        body.dark &{
+            background-color: $claro;
+            color: $oscuro;
+        }
+    }
+}
+
+.btnsNav{
+    background-color: $btnsModoClaro;
+    border-style: none;
+    &:hover{
+        background-color: $claro;
+        color:$oscuro;
+        body.dark &{
+            background-color: $btnsModoClaro;
+            color: $claro;
+           
+        }
+    }
+    body.dark &{
+        color: $oscuro;
+        background-color: $btnsModoClaro;
+        border-style: none;
+    }
+}
+
+
+//Tarjetas de productos
+
+.tarjetasListado{
+    margin: 5px;
+    background-color: $fondoClaroArticulos;
+    padding: 10px;
+    body.dark &{
+        color: $claro;
+        background-color: $fondoOscuroArticulos;
+    }
+}
+
+.estiloBtnAgregar{
+    border-radius: 10px;
+    padding: 4px;
+    background-color: $btnsModoClaro;
+    color:$claro;
+    &:hover{
+        background-color: $claro;
+        color: $oscuro;
+        body.dark &{
+            background-color: $oscuro;
+            color: $claro;
+        }
+    }
+    body.dark &{
+        color: $oscuro;
+        background-color: $btnsModoOscuro;
+    }
+}
+
+
+
+
+//Boton Carrito
+.botonCarrito{
+    color: $claro;
+    height: 5rem;
+    width: 300px;
+    &:hover{
+        background-color: white;
+        color:$oscuro;
+        body.dark &{
+            background-color:$claro;
+        }
+    }
+    body.dark &{
+        color: $oscuro;
+        background-color: $btnsModoOscuro;
+    }
+    
+    
+}
+
+
+//botones ordenar por precio asc/desc
+.btnOrdenar{
+    border-radius: 5px;
+    padding:1px;
+    text-align: center;
+    background-color:$btnsModoClaro;
+    color:$claro;
+    font-weight: bold;
+    height: 40px;
+}
+
+/*CARRITO DE COMPRAS*/
+.estiloCarrito{
+    background-color: $claro;
+    body.dark &{
+        color: $claro;
+        background-color: $fondoOscuroArticulos;
+    }
+}
+
+.tarjetasCarrito{
+    border-radius: 5px;
+    margin: 5px;
+    background-color:$fondoClaroArticulos ;
+    width: 15rem;
+    padding: 5px;
+    body.dark &{
+        color: $claro;
+        background-color: $oscuro;
+    }
+}
+
+.textoCarrito{
+    font-weight: bold;
+}
+
+.estiloBtnBorrar{
+    border-radius: 10px;
+    padding: 2px 15px;
+    background-color: $oscuro;
+    color:$claro;
+    &:hover{
+        background-color: $claro;
+        color: $oscuro;
+    }
+    body.dark &{
+        background-color: $btnsModoOscuro;
+        color: $oscuro;
+    }
+}
+
+.btnFinCompra{
+    border-radius: 10px;
+    padding: 20px 38px;
+    background-color: $fondoClaroArticulos;
+    color:$oscuro;
+    &:hover{
+        background-color: $claro;
+        color: $oscuro;
+    }
+    body.dark &{
+        background-color: $btnsModoOscuro;
+        color: $oscuro;
+    }
+}
+
